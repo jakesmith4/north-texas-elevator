@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>North Texas Elevator || Post Two</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <div class="logo">
+          <div class="block-logo">
+            <img
+              src="img/elevatorlogo3-min.png"
+              alt="North Texas Elevator Logo"
+            />
+          </div>
+        </div>
+        <h2 class="logo-display">
+          <span class="text-primary">North</span> Texas Elevator
+        </h2>
+        <a href="tel:2144910512">(214) 491-0512</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+        <p>North Texas Elevator</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Why Should I Invest in Routine Maintenance</h2>
+        <p class="meta">
+          <i class="fas fa-user-circle"></i> Posted by
+          <strong>Donnette Smith</strong> | March 17th 2021
+        </p>
+        <img
+          src="img/blog-post-2-min.jpg"
+          alt="construction worker with prints"
+        />
+        <p>
+          Routine and regular maintenance for your elevators may seem like an
+          unnecessary expense. But if you really stop and think about it,
+          scheduling regular service visits may actually save you time and
+          money. Here’s why.
+        </p>
+        <h3>Optimal Functionality</h3>
+        <p>
+          As with most large, expensive equipment, regular maintenance is
+          necessary to keep it functioning at its peak performance and to ensure
+          that all pieces and parts continue working together for as long as
+          possible. Most people wouldn’t dream of skipping oil changes, brakes,
+          tires, belts, and other maintenance items on their cars. Elevators
+          have oil, brakes, belts and rollers too! During regular maintenance,
+          your service technician will keep everything lubricated and inspect
+          and replace wear items. Waiting to do these things when the elevator
+          stops working can cause major damage and require additional downtime
+          and costly repairs. You could prevent a failure in the middle of the
+          night or during the busiest rush of the day.
+        </p>
+        <h3>Ensure Safety and Compliance</h3>
+        <p>
+          Elevator equipment needs state required annual testing, and for
+          certain types of equipment, 5 year testing in order to remain in
+          compliance and to receive your certificate of operation. Murphy
+          Elevator’s preventative maintenance programs include keeping your
+          elevator’s state required testing up to date. Your service technician
+          will also ensure your elevator is in compliance with state code
+          requirements, routinely maintained, and free from issues that could
+          cause breakdowns. Our maintenance plans include several levels of
+          service to meet the needs of your equipment.
+        </p>
+        <p>
+          Regular maintenance also helps prevent common elevator malfunctions
+          such as bad door operation, rough rides and poor leveling. Ensuring
+          good leveling, smooth rides, and proper door operation keeps your
+          building occupants safe from potential trip and fall hazards. These
+          types of hazards are particularly dangerous to riders with poor
+          mobility.
+        </p>
+        <p>
+          Building owners and managers should also be aware of new elevator
+          mechanic licensing requirements. Many states require an elevator
+          mechanics license to service and repair elevators. Every once in a
+          while, we hear of building maintenance personnel or building
+          electricians working on elevators as part of their job. It should go
+          without saying that elevator work is extremely specialized and should
+          only be attempted by trained professionals, regardless of state
+          regulations. That said it is now in violation of the law in many
+          states and could open up the building owner to serious liability.
+        </p>
+        <h3>Identify Need for Upgrades</h3>
+        <p>
+          As a building owner or property manager, you should know your
+          elevators’ maintenance schedules. By keeping a detailed record of
+          elevator service calls and the dates of maintenance, you can not only
+          catch problems sooner, but you may also notice trends in malfunctions
+          and downtime. An increase in service calls or decrease in parts
+          availability could mean that it’s time for an upgrade or modernization
+          of your elevators.
+        </p>
+        <p>
+          How long has it been since your last upgrade? Discuss your options
+          with your service technician and ask about your elevators’ life
+          expectancy. It may be time to put an end to extensive spending to keep
+          outdated parts working by overhauling your elevator and bringing it up
+          to the latest technology.
+        </p>
+        <div class="post-links">
+          <a href="post1.html">Previous Article</a>
+          <a href="post3.html">Next Article</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x fa-fw"></i></a>
+      </div>
+      <div class="sitemap-links">
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="maintenancecontracts.html">Maintenance Contracts</a>
+      </div>
+      <p>Copyright &copy; 2021 - North Texas Elevator</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

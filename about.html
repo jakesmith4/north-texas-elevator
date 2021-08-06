@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>North Texas Elevator || About Us</title>
+  </head>
+  <body id="home">
+    <header class="hero about">
+      <div id="navbar" class="navbar top">
+        <div class="logo">
+            <div class="block-logo">
+              <img src="img/elevatorlogo3-min.png" alt="north texas elevator logo">
+            </div> 
+          </div>
+          <h2 class="logo-display"><span class="text-primary">North</span> Texas Elevator</h2>
+        <a href="tel:2144910512">(214) 491-0512</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>About Us</h1>
+        <p>North Texas Elevator</p>
+      </div>
+    </header>
+
+    <main>
+    <section class="section-header">
+      <h2>About Us</h2>
+      <p>
+        North Texas Elevator delivers straightforward and honest service to its
+        customers. As a full-service provider, we offer 24-hour service, repair,
+        modernization and installation of commercial, industrial and residential
+        elevators. Our team is ready to work with your existing equipment — any
+        brand, any age, any time.
+        <div>
+          <img src="img/elevatorlogofinal-min.png" class="logo-img" alt="North Texas Elevator Logo" />
+        </div>
+      </p>
+    </section>
+
+      <section class="company-info">
+        <div class="section-center">
+          <h3>North Texas Elevator</h3>
+          <article>
+            <h4>Monthly Maintenance</h4>
+            <p>
+              North Texas Elevator Company’s maintenance plans include a variety of levels of service to meet the needs of your equipment. We work with you to ensure that your elevators are up to code, routinely maintained and free from issues that could cause breakdowns—all with minimal downtime. Take a look at <a href="services.html#maintenance-table" class="chart-link">This chart</a>. It can help you determine which of our plans will work best for your building, but we encourage you to contact us for even more information.
+            </p>
+            <a href="maintenancecontracts.html" class="maintenance-btn">Maintenance Contracts</a>
+          </article>
+          <hr class="hr-break">
+          <article>
+            <h4>Service Repair</h4>
+            <p>
+              As an independent elevator contractor, we have the flexibility to explore all possible repair and service options within your budget before resorting to a full equipment replacement. As part of our service agreement, we respond to breakdowns or other issues within two hours of your phone call, any time of the day for metro areas. In cases of entrapment, we can be on-location in 30 to 60 minutes. Response times will vary in more rural areas.
+            </p>
+            <p>
+              Our maintenance technicians carry the necessary equipment to address most routine repairs in their trucks, so many basic repairs can be done on-site at the time of inspection or during routine maintenance.
+            </p>
+          </article>
+          <hr class="hr-break">
+          <article>
+            <h4>Modernisation</h4>
+            <p>
+              Elevators are a permanent fixture in your building. As with all infrastructure, elevators require upgrades with age as technology changes and equipment becomes less reliable. North Texas Elevator is here to help you determine which upgrades are necessary and whether other systems may be affected (such as fire alarm panels and HVAC).
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis placeat natus corrupti ad aliquid consequuntur
+              officiis, est, nulla aspernatur ipsum aut dolor quibusdam
+              expedita, iste veritatis. Totam quibusdam quod deserunt.
+            </p>
+          </article>
+          <hr class="hr-break">
+          <article>
+            <h4>Home Lifts And Stair Lifts</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              eum assumenda rerum deleniti obcaecati. Eum facilis veritatis
+              officiis, numquam perspiciatis voluptas? Reiciendis consequatur,
+              placeat nam amet in tempora commodi eaque excepturi accusamus
+              culpa maiores accusantium, soluta officia. In, repellat
+              dignissimos necessitatibus, dolore laboriosam, molestiae nostrum
+              aperiam esse sequi nemo eaque quo veritatis blanditiis soluta
+              natus illo corrupti qui earum quod!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis placeat natus corrupti ad aliquid consequuntur
+              officiis, est, nulla aspernatur ipsum aut dolor quibusdam
+              expedita, iste veritatis. Totam quibusdam quod deserunt.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x fa-fw"></i></a>
+      </div>
+      <div class="sitemap-links">
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="maintenancecontracts.html">Maintenance Contracts</a>
+      </div>
+      <p>Copyright &copy; 2021 - North Texas Elevator</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

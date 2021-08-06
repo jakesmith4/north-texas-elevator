@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>North Texas Elevator || Post Three</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <div class="logo">
+          <div class="block-logo">
+            <img
+              src="img/elevatorlogo3-min.png"
+              alt="North Texas Elevator Logo"
+            />
+          </div>
+        </div>
+        <h2 class="logo-display">
+          <span class="text-primary">North</span> Texas Elevator
+        </h2>
+        <a href="tel:2144910512">(214) 491-0512</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+        <p>North Texas Elevator</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>How elevator upgrades help increase building occupancy rates</h2>
+        <p class="meta">
+          <i class="fas fa-user-circle"></i> Posted by
+          <strong>Jacob Smith</strong> | April 23rd 2020
+        </p>
+        <img src="img/blog-post-3-min.jpg" alt="worker grinding" />
+        <p>
+          For property owners and managers of residential and office buildings
+          with multiple floors, one big consideration is tenant satisfaction.
+          And a huge aspect of that is how well your elevators function.
+        </p>
+        <h3>Happy Tenants Spread the Word</h3>
+        <p>
+          Your tenants don’t want to climb the stairs to their office, apartment
+          or condo because of a broken elevator. For tenants with limited
+          accessibility or a disability, a non-functioning elevator can mean
+          having no access to their property. Every property manager knows that
+          having just one elevator down in a group can fill the elevator lobby
+          with people. Waiting too long to get back upstairs can set off even
+          the best tenant.
+        </p>
+        <p>
+          When tenants aren’t happy, they let you know. In today’s world, that
+          can mean via social media or by posting negative reviews of your
+          building online. All it takes is to have a potential resident do a
+          simple search and find complaints to convince them to find a more
+          modern, accessible building in which to live.
+        </p>
+        <h3>When to Consider Upgrading</h3>
+        <p>
+          f your building’s elevators experience frequent downtime, are too
+          slow, or have rough or bumpy starts and stops, it may be time to
+          consider some upgrades. By doing so, you’ll gain the love of your
+          tenants and increase the likelihood that new prospective leaseholders
+          will seek out your property for residence.
+        </p>
+        <h3>Modern Elevator Technology</h3>
+        <p>
+          Elevators today are far more efficient when it comes to moving people,
+          but that doesn’t necessarily mean they are moving faster. Improved
+          electronics mean that dispatching becomes more efficient. Modern
+          elevators have microprocessors onboard that can “learn” a building’s
+          traffic patterns and will dispatch elevators to the floors that are
+          highest in demand during peak times.
+        </p>
+        <p>
+          North Texas Elevator can perform a site survey on your property,
+          measuring the speed, efficiency and overall performance of your
+          elevators. We can then make recommendations on repair, refurbishment
+          or replacement of your elevators and/or components.
+        </p>
+        <p>
+          Our skilled, licensed technicians consider all elements that make your
+          elevator user friendly. And we do our best to keep the safety and
+          comfort of your tenants in mind as we do so. Schedule an inspection
+          today.
+        </p>
+        <div class="post-links">
+          <a href="post2.html">Previous Article</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x fa-fw"></i></a>
+      </div>
+      <div class="sitemap-links">
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="maintenancecontracts.html">Maintenance Contracts</a>
+      </div>
+      <p>Copyright &copy; 2021 - North Texas Elevator</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

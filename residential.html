@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>North Texas Elevator || Residential</title>
+  </head>
+  <body id="home">
+    <header class="hero residential">
+      <div id="navbar" class="navbar top">
+        <div class="logo">
+          <div class="block-logo">
+            <img
+              src="img/elevatorlogo3-min.png"
+              alt="North Texas Elevator Logo"
+            />
+          </div>
+        </div>
+        <h2 class="logo-display">
+          <span class="text-primary">North</span> Texas Elevator
+        </h2>
+        <a href="tel:2144910512">(214) 491-0512</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Residential</h1>
+        <p>North Texas Elevator</p>
+      </div>
+    </header>
+
+    <div class="content-divider"></div>
+
+    <main>
+      <div class="section-center flex">
+        <article class="services-body">
+          <h2>Residential Services</h2>
+          <p>
+            Whether it’s for condo or housing associations, property managers or
+            in private residences, our team is ready to install new elevators,
+            or service your property’s current ones. When your property needs
+            service, our team acts fast and sends you a notification via email
+            when the work is complete. Our up-front pricing ensures that you
+            never get any surprises when the bill arrives.
+          </p>
+
+          <p>
+            We are in the business of moving people and understand that the
+            safety and comfort of your tenants is the highest priority. All of
+            our licensed technicians graduate from the four-year National
+            Elevator Industry Education Program, so you can be sure that we
+            perform your repairs, inspections and installations correctly and
+            safely. We also consider floor leveling performance, door times and
+            other factors that make your elevator more user friendly. When it’s
+            serviced by Murphy Elevator Company, you know it’s not only in
+            compliance; it’s adjusted for perfect performance.
+          </p>
+
+          <p>
+            If other companies have told you it can’t be done because your
+            equipment is obsolete, give us a call. With experience in a wide
+            breadth of elevator industry experience, we can repair and source
+            old relays and electronics, and retool and refurbish
+            out-of-production components.
+          </p>
+        </article>
+        <aside class="services-sidebar">
+          <h2>Contact Us</h2>
+          <h3>We Answer 24/7</h3>
+          <p>
+            You don't have time to spend talking to machines. No matter what
+            time of day you call us, a real, live human will answer the phone,
+            and our maintenance staff can respond to your business or residence
+            in as little as two hours in metro areas. Give us a call for a quote
+            today.
+          </p>
+          <div class="phone">(214)-491 0512</div>
+          <a href="index.html#contact" class="btn service-btn">Get A Quote</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x fa-fw"></i></a>
+      </div>
+      <div class="sitemap-links">
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="maintenancecontracts.html">Maintenance Contracts</a>
+      </div>
+      <p>Copyright &copy; 2021 - North Texas Elevator</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

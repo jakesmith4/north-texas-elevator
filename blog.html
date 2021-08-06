@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>North Texas Elevator || Blog</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <div class="block-logo">
+            <img
+              src="img/elevatorlogo3-min.png"
+              alt="North Texas Elevator Logo"
+            />
+          </div>
+        </h1>
+        <h2 class="logo-display">
+          <span class="text-primary">North</span> Texas Elevator
+        </h2>
+        <a href="tel:2144910512">(214) 491-0512</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+        <p>North Texas Elevator</p>
+      </div>
+    </header>
+
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img
+                src="img/blog-post-1-min.jpg"
+                alt="construction drawing with pencil"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>What Type of Elevator Do I Need?</h2>
+              <p class="meta">
+                <i class="fas fa-user-circle"></i> Posted by
+                <strong>Allen Smith</strong> | March 7th 2021
+              </p>
+              <p>
+                One thing many property managers or owners don’t realize is that
+                different types and classes of elevators are recommended for
+                buildings depending on the size and types of loads they will be
+                carrying. Smaller buildings with five or fewer stories usually
+                require a hydraulic elevator. Taller buildings required a cabled
+                elevator. In the elevator industry, these are called “traction
+                elevators.”
+              </p>
+              <a href="post1.html" class="btn btn-dark">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img
+                src="img/blog-post-2-min.jpg"
+                alt="construction worker with prints"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>Why Should I Invest in Routine Maintenance</h2>
+              <p class="meta">
+                <i class="fas fa-user-circle"></i> Posted by
+                <strong>Donnette Smith</strong> | March 17th 2021
+              </p>
+              <p>
+                Routine and regular maintenance for your elevators may seem like
+                an unnecessary expense. But if you really stop and think about
+                it, scheduling regular service visits may actually save you time
+                and money. Here’s why.
+              </p>
+              <a href="post2.html" class="btn btn-light">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="img/blog-post-3-min.jpg" alt="worker grinding metal" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>
+                How elevator upgrades help increase building occupancy rates
+              </h2>
+              <p class="meta">
+                <i class="fas fa-user-circle"></i> Posted by
+                <strong>Jacob Smith</strong> | April 23 2020
+              </p>
+              <p>
+                For property owners and managers of residential and office
+                buildings with multiple floors, one big consideration is tenant
+                satisfaction. And a huge aspect of that is how well your
+                elevators function.
+              </p>
+              <a href="post3.html" class="btn btn-dark">
+                <i class="fas fa-chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x fa-fw"></i></a>
+      </div>
+      <div class="sitemap-links">
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="maintenancecontracts.html">Maintenance Contracts</a>
+      </div>
+      <p>Copyright &copy; 2021 - North Texas Elevator</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

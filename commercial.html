@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Icons -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>North Texas Elevator || Commercial</title>
+  </head>
+  <body id="home">
+    <header class="hero commercial">
+      <div id="navbar" class="navbar top">
+        <div></div> class="logo">
+          <div class="block-logo">
+            <img src="img/elevatorlogo3-min.png" alt="North Texas Elevator Logo" />
+          </div>
+        </>
+        <h2 class="logo-display">
+          <span class="text-primary">North</span> Texas Elevator
+        </h2>
+        <a href="tel:2144910512">(214) 491-0512</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Commercial</h1>
+        <p>North Texas Elevator</p>
+      </div>
+    </header>
+
+    <div class="content-divider"></div>
+
+    <main>
+      <div class="section-center flex">
+        <article class="services-body">
+          <h2>Commercial Services</h2>
+          <p>
+            We’re available 24 hours a day to service, repair and inspect your
+            elevators, ensuring they’re reliable and running safely. Our skilled
+            technicians will keep your tests up to date, your equipment running
+            smoothly, and most importantly, we get it done right the first time.
+          </p>
+
+          <p>
+            All work is done by our trained and licensed technicians, ensuring
+            that your elevator never gets a state violation or has lengthy
+            downtime. Every tech completes a four year, federally-approved
+            National Elevator Industry Educational Program (NEIEP)
+            apprenticeship program, so you can trust their expertise. We adhere
+            to your site’s safety requirements, along with our own high
+            standards.
+          </p>
+
+          <p>
+            We service all makes, models and brands of elevators: Otis,
+            ThyssenKrupp, Kone, Dover, U.S. Elevator, Montgomery, Armor,
+            Schindler, Fujitec, and many more.
+          </p>
+        </article>
+        <aside class="services-sidebar">
+          <h2>Contact Us</h2>
+          <h3>We Answer 24/7</h3>
+          <p>
+            You don't have time to spend talking to machines. No matter what
+            time of day you call us, a real, live human will answer the phone,
+            and our maintenance staff can respond to your business or residence
+            in as little as two hours in metro areas. Give us a call for a quote
+            today.
+          </p>
+          <div class="phone">(214)-491 0512</div>
+          <a href="index.html#contact" class="btn service-btn">Get A Quote</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+        <a href="#"><i class="fab fa-google fa-2x fa-fw"></i></a>
+      </div>
+      <div class="sitemap-links">
+        <a href="commercial.html">Commercial</a>
+        <a href="residential.html">Residential</a>
+        <a href="maintenancecontracts.html">Maintenance Contracts</a>
+      </div>
+      <p>Copyright &copy; 2021 - North Texas Elevator</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
